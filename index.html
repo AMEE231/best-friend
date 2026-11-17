@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farriin Adiga Kuu Gaar Ah Saynab ❤️</title>
+
+<style>
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #160b35,
+        #49245f,
+        #a34b78
+    );
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* STARS */
+.stars {
+    position: fixed;
+    color: white;
+    opacity: 0.7;
+    pointer-events: none;
+    animation: float 5s infinite ease-in-out;
+}
+
+.star1 { top: 10%; left: 10%; }
+.star2 { top: 20%; right: 12%; }
+.star3 { bottom: 15%; left: 15%; }
+.star4 { bottom: 20%; right: 10%; }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* MAIN CONTAINER */
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 470px;
+    padding: 40px 30px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 25px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+    animation: appear 1s ease;
+}
+
+/* HEART */
+.heart {
+    font-size: 65px;
+    margin-bottom: 20px;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* TEXT */
+h1 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+    color: #ffc0d8;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #f8eafa;
+    margin-bottom: 22px;
+}
+
+/* BUTTON */
+button {
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+
+    background: #ff8ab5;
+    color: #32132f;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: #ffc0d8;
+}
+
+/* MESSAGE */
+#message {
+    display: none;
+    margin-top: 30px;
+    animation: appear 1s ease;
+}
+
+#extra {
+    display: none;
+    margin-top: 25px;
+    padding: 18px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 15px;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #eacde8;
+}
+
+/* LAPTOP */
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+        padding: 45px 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .wrapper {
+        align-items: flex-start;
+        padding: 25px 15px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND STARS -->
+<div class="stars star1">✦</div>
+<div class="stars star2">✨</div>
+<div class="stars star3">✧</div>
+<div class="stars star4">✦</div>
+
+<!-- MAIN -->
+<div class="wrapper">
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Farriin Adiga Kuu Gaar Ah Saynab!</h1>
+
+    <p>
+        Waxaan rabaa inaad ogaato hal arrin...
+        Waxaad tahay qof mudan in la qiimeeyo
+        lana xusuusto.
+    </p>
+
+    <button onclick="showMessage()">
+        Riix Halkan ✨
+    </button>
+
+    <!-- FIRST MESSAGE -->
+    <div id="message">
+
+        <h2>Waxaad Tahay Qof Gaar Ah Saynab 🥹</h2>
+
+        <p>
+            Waxaad leedahay qalbi wanaagsan,
+            dabeecad qurux badan iyo qiime aan
+            lagu cabbiri karin ereyo.
+
+            <br><br>
+
+            Dhoolla-caddayntaadu waa qurux,
+            hadalkaaguna waa farxad.
+
+            <br><br>
+
+            Ha yaraysan naftaada, hana ilaawin
+            inaad tahay qof wax badan mudan.
+
+            <br><br>
+
+            Waxaan kuu rajaynayaa farxad,
+            guul iyo nolol qurux badan.
+
+            ❤️ Waligaa faraxsanow!
+        </p>
+
+        <button onclick="moreMessage()">
+            Fariin kale ii fur 💌
+        </button>
+
+        <!-- SECOND MESSAGE -->
+        <div id="extra">
+
+            <h2>Hal Arrin Xusuusnow 🌹</h2>
+
+            <p>
+                Adduunka waxaa laga yaabaa inuusan
+                mar walba kuu sheegin qiimahaaga,
+                laakiin taasi macnaheedu ma aha
+                inaadan qiimo lahayn.
+
+                <br><br>
+
+                Waxaad mudan tahay ixtiraam,
+                farxad iyo dad kuu rajeeya wanaag.
+
+                <br><br>
+
+                Naftaada jeclow, awooddaada rumayso,
+                waligaa ha quusan.
+
+                <br><br>
+
+                Maalin kasta sabab aad u dhoolla
+                caddayso ha hesho! ❤️
+
+            </p>
+
+            <div style="font-size:35px">
+                🥰🌸❤️
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Si gaar ah ayaa adiga laguugu sameeyay ❤️
+    </div>
+
+</div>
+</div>
+
+<script>
+
+function showMessage() {
+
+    const message = document.getElementById("message");
+
+    message.style.display = "block";
+
+    setTimeout(() => {
+        message.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }, 100);
+
+}
+
+function moreMessage() {
+
+    const extra = document.getElementById("extra");
+
+    extra.style.display = "block";
+
+    setTimeout(() => {
+        extra.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }, 100);
+
+}
+
+</script>
+
+</body>
+</html>
